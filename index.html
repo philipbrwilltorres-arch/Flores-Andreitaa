@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Andreita</title>
+    <style>
+        body { background-color: #fff9e6; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; font-family: 'Arial', sans-serif; }
+        .bouquet { position: relative; width: 200px; height: 300px; }
+        .flower { position: absolute; width: 50px; height: 50px; background: #ffd700; border-radius: 50%; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .flower::after { content: ''; position: absolute; width: 20px; height: 20px; background: #b8860b; border-radius: 50%; top: 15px; left: 15px; }
+        /* Posiciones del ramo */
+        .f1 { top: 0; left: 75px; } .f2 { top: 40px; left: 40px; } .f3 { top: 40px; left: 110px; }
+        .stem { position: absolute; width: 4px; height: 150px; background: #2e8b57; top: 50px; left: 98px; z-index: -1; transform-origin: top; }
+        .s2 { transform: rotate(15deg); } .s3 { transform: rotate(-15deg); }
+        .message { margin-top: 50px; text-align: center; color: #b8860b; padding: 0 20px; }
+        h1 { font-size: 1.5rem; margin-bottom: 10px; }
+        p { font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="bouquet">
+        <div class="stem s1"></div><div class="stem s2"></div><div class="stem s3"></div>
+        <div class="flower f1"></div><div class="flower f2"></div><div class="flower f3"></div>
+    </div>
+    <div class="message">
+        <h1>¡Flores amarillas para ti, Andreita!</h1>
+        <p>"Un pequeño detalle programado con mucho cariño para alegrar tu día."</p>
+    </div>
+</body>
+</html>
